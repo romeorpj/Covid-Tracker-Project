@@ -1,11 +1,11 @@
 import { useState } from "react";
 import React  from 'react'
-import { Data } from './data';
+import { Data } from './Data';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 import {FiPlus, FiMinus} from 'react-icons/fi';
-import { Params } from "./data";
-import { Details } from "./data";
+import { Params } from "./Data";
+import { Details } from "./Data";
 
 
 const Body = styled.body `
