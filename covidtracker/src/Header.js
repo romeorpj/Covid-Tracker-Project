@@ -9,16 +9,20 @@ function Header() {
 				<div className="header-container">
 					<div className="mobile-menu">
 						<div className="logo">
-							<img
-								src="img/coronaviruslogo.png"
-								alt="corona tracker logo"
-								className="logo-img"
-							/>
-							<p className={active ? "white-mobile-title" : "mobile-title"}>
-								CAMPUS
-								<br />
-								CORONA TRACKER
-							</p>
+							<Link to="/">
+								<img
+									src="img/coronaviruslogo.png"
+									alt="corona tracker logo"
+									className="logo-img"
+								/>
+							</Link>
+							<Link to="/">
+								<p className={active ? "white-mobile-title" : "mobile-title"}>
+									CAMPUS
+									<br />
+									CORONA TRACKER
+								</p>
+							</Link>
 						</div>
 
 						<section
