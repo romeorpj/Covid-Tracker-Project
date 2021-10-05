@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import "./index.css";
 import Header from "./Header";
 import LandingPage from "./LandingPage";
@@ -23,6 +24,18 @@ function App() {
 			</div>
 		</Router>
 	);
+=======
+
+import Faq from './FAQ page/Faq';
+import Contactpg from './Contact Page/contactpg'
+function App() {
+  return (
+    <div className="App">
+     <Contactpg/>
+     {/* <Faq/> */}
+    </div>
+  );
+>>>>>>> 5680eaaf04876dc24eb3d26ab2c2c185274457ae
 }
 
 export default App;
