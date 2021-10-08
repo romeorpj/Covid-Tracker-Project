@@ -1,0 +1,145 @@
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+body {
+	text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+
+.aboutpg_container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15%;
+    padding-bottom: 15%;
+}
+.aboutpg_h1 {
+    font-size: 5em;
+    margin-top: 4.5em;
+    /* margin-left: 13em; */
+    position: absolute;
+    transform: translateX(60%);
+    width: 600px;
+    text-align: center;
+}
+.aboutpg_camp, .aboutpg_meet, .aboutpg_cov {
+    font-size: 3.5em;
+}
+.aboutpg_p1 {
+    width: 95%;
+    font-size: 2.5em;
+    margin-left: 2.5%;
+}
+.aboutpg_gridwrap {
+    width: 72vw;
+}
+.aboutpg_team {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-items: center; 
+    margin-left: 5%;
+    margin-top: -1%;
+    margin-bottom: 10%;
+    border: #2980B9 solid 85px;
+    border-top: none;
+    border-bottom: none;
+    padding-top: 3%;
+}
+.aboutpg_ulrec {
+    display: block;
+    margin-top: 0%;
+    margin-left: 5%;
+    margin-bottom: -3.5%;
+}
+.aboutpg_urrec {
+    display: block;
+    margin-left: 72vw;
+}
+.aboutpg_brrec {
+    display: block;
+    margin-left: 72vw;
+    margin-top: -3.5%;
+}
+.aboutpg_blrec {
+    display: block;
+    margin-left: 5%;
+    margin-top: -10.5%;
+}
+.aboutpg_pname {
+    text-align: center;
+    font-size: 2em;
+}
+.aboutpg_cov {
+    margin-top: 10%;
+}
+.aboutpg_p2 {
+    width: 95%;
+    font-size: 2.1em;
+    margin-left: 2.5%;
+}
+
+@media (max-width: 768px) {
+    .aboutpg_container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 15%;
+        padding-bottom: 15%;
+        font-size: .7em;
+    }
+    .aboutpg_h1 {
+        font-size: 4em;
+        margin-top: 3em;
+        position: absolute;
+        transform: translateX(7%);
+        width: 600px;
+        text-align: center;
+    }
+    .aboutpg_camp, .aboutpg_meet, .aboutpg_cov {
+        font-size: 2.5em;
+    }
+    .aboutpg_ulrec, .aboutpg_blrec, .aboutpg_urrec, .aboutpg_brrec {
+        display: none;
+    }
+    .aboutpg_team {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-items: center; 
+        margin-left: 6%;
+        margin-top: -1%;
+        margin-bottom: 10%;
+        border: #2980B9 solid 30px;
+        padding-top: 3%;
+    }
+    .aboutpg_team img {
+        width: 200px;
+    }
+    
+}
