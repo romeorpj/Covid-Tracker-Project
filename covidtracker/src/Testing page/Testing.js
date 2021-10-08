@@ -1,15 +1,15 @@
-import { Link } from "react-router-dom";
-import React from 'react';
-import '/Users/laurensmalls/Desktop/Covid-Tracker-Project/covidtracker/src/Testing page/Testing.css'
-import doctor from '/Users/laurensmalls/Desktop/Covid-Tracker-Project/covidtracker/src/Testing page/images/—Pngtree—black man black doctor doctors_3921468 1.png'
-import couple from '/Users/laurensmalls/Desktop/Covid-Tracker-Project/covidtracker/src/Testing page/images/college-couple.png'
 
-function App()  {
+import React from 'react';
+import './Testing.css'
+
+import doctor from './images/—Pngtree—black man black doctor doctors_3921468 1.png'
+import couple from './images/college-couple.png'
+
+function Testing()  {
     return (
         <>
-        <header>
+        
             {/* NAVBAR Goes Here*/}
-        </header>
 
         <main>
         <div className="testing-section"/>
@@ -28,7 +28,7 @@ function App()  {
 
         <div className="location-section">
             <h3 className="location-heading">Testing Location</h3>
-            <img src={doctor}/>
+            <img className="doctor" src={doctor}/>
             <p className="location-sub">
                 Testing is ongoing throughout the semester. Testing will occur every from
                 8:00AM - 6:00PM. <span>Walk-in only.</span>Please follow the guidelines below when
@@ -52,7 +52,7 @@ function App()  {
                 academic year.
             <br></br>
             <br></br>
-            Our college's decision is aligned with the recommendations of teh American College Health 
+            Our college's decision is aligned with the recommendations of the American College Health 
             Association, which issued a <span>statement recognizing that comprenhensive COVID-19 
             vaccination</span> is the most effective way for institutition of higher education to return
             to a safe, robust, on-campus experience. </p>
@@ -68,12 +68,12 @@ function App()  {
                 Proof of one doses of the Johnson & Johnson Janssen or two doses of the Moderna
                 or Pfizer vaccine was due by <span>August 30, 2021</span>, for all students, faculty, 
                 and staff. If you have not yet submitted proof of your completed vaccination series,
-                please contact <span>health@college.edu</span> or <span>hr@college.edu</span>
+                please contact <span>health@college.edu</span> or <span>hr@college.edu </span>
                 (faculty and staff) immediately. 
             </p>
 
             <h3 className="vaccine-doc">Vaccination Document</h3>
-            <img src={couple}/>
+            <img className="couple" src={couple}/>
             <p className="vaccination-info">
                 In order to be considered fully vaccinated, individuals should have obtained 
                 complete immunization (one-shot dose or second shot of two shot dose) by the 
@@ -92,13 +92,14 @@ function App()  {
             <button className="vaccination-btn">Upload Vaccination Documents Here</button>
         </div>
 
-        <footer>
+        
           {/* Footer Goes Here*/}
 
-        </footer>
+       
         </main>
 
         
 </>
     )
 }
+export default Testing 
