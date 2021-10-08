@@ -1,7 +1,6 @@
 
 import React from 'react';
 import './Testing.css'
-
 import doctor from './images/—Pngtree—black man black doctor doctors_3921468 1.png'
 import couple from './images/college-couple.png'
 
