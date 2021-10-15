@@ -1,5 +1,5 @@
 // import React, { useState } from "react";
-
+import "./index.css";
 const LandingPage = () => {
 	return (
 		<div className="dashboard-container">

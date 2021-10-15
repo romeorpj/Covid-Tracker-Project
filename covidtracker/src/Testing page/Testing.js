@@ -1,14 +1,12 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import "/Users/laurensmalls/Desktop/Covid-Tracker-Project/covidtracker/src/Testing page/Testing.css";
-import doctor from "/Users/laurensmalls/Desktop/Covid-Tracker-Project/covidtracker/src/Testing page/images/—Pngtree—black man black doctor doctors_3921468 1.png";
-import couple from "/Users/laurensmalls/Desktop/Covid-Tracker-Project/covidtracker/src/Testing page/images/college-couple.png";
+import "./Testing.css";
+import doctor from "./images/—Pngtree—black man black doctor doctors_3921468 1.png";
+import couple from "./images/college-couple.png";
 
-function App() {
+function Testing() {
 	return (
 		<>
-			<header>{/* NAVBAR Goes Here*/}</header>
-
 			<main>
 				<div className="testing-section" />
 				<div className="testing-header">
@@ -116,9 +114,9 @@ function App() {
 						Upload Vaccination Documents Here
 					</button>
 				</div>
-
-				<footer>{/* Footer Goes Here*/}</footer>
 			</main>
 		</>
 	);
 }
+
+export default Testing;

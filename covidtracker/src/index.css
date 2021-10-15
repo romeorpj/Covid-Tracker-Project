@@ -430,6 +430,32 @@ footer nav ul li {
 
 /* ***DESKTOP MEDIA QUERIES*** */
 
+@media only screen and (min-width: 752px) {
+	.nav-links span {
+		font-size: 1rem;
+		font-weight: 700;
+		color: black;
+		position: relative;
+		margin-bottom: 0px;
+	}
+	.nav-links span:hover::after {
+		content: " ";
+		position: absolute;
+		width: 100%;
+		height: 8px;
+		transform: translateX(20%);
+		background: yellowgreen;
+		border-radius: 5px;
+		overflow: hidden;
+		transition: all 500ms ease-in-out;
+	}
+	.nav-links span:hover::after {
+		transform: translateX(0%);
+		left: 0px;
+		opacity: 1;
+	}
+}
+
 @media only screen and (min-width: 769px) {
 	header {
 		display: flex;
@@ -507,10 +533,13 @@ footer nav ul li {
 	}
 	/* ***DASHBOARD QUERIES*** */
 	.dashboard-container {
+		/* width: 100%; */
 		width: 90%;
+
 		max-width: 1400px;
-		margin: auto;
+		margin: 0 auto;
 		min-height: calc(100vh - 332px);
+		/* border: rebeccapurple solid 3px; */
 	}
 	main {
 		margin-bottom: 30px;

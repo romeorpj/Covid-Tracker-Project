@@ -1,306 +1,297 @@
 /* Set core root defaults */
 html:focus-within {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    text-rendering: optimizeSpeed;
+	text-rendering: optimizeSpeed;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-    text-decoration-skip-ink: auto;
+	text-decoration-skip-ink: auto;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer nto to see them */
-@media (prefers-reduced-motion:reduce) {
-    html:focus-within {
-        scroll-behavior: auto;
-    }
-    *,
-    *::before, 
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 :root {
-    --offwhite: #f9f9f9;
-    --white: #ffffff;
-    --coronablue: #4286F4;
-    --black: #000000;
-    --green: #56AB2F;
-    --bluebutton: #1565C0;
-    --greenbutton: #2EBF91;
-
+	--offwhite: #f9f9f9;
+	--white: #ffffff;
+	--coronablue: #4286f4;
+	--black: #000000;
+	--green: #56ab2f;
+	--bluebutton: #1565c0;
+	--greenbutton: #2ebf91;
 }
 
-*::before, 
+*::before,
 *::after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 /* Media queries for iPad 1024 x 768 (landscape) */
-@media(max-width: 768px) {
-.testing-header {
-    width: 975px;
-}
-.test-sub{
-    width: 900px;
-}
-.doctor-img {
-    margin-left: 550px;
-    position: relative;
-    top: -90px;
-    height: 400px;
-}
+@media (max-width: 768px) {
+	.testing-header {
+		width: 975px;
+	}
+	.test-sub {
+		width: 900px;
+	}
+	.doctor-img {
+		margin-left: 550px;
+		position: relative;
+		top: -90px;
+		height: 400px;
+	}
 
-.location-sub {
-    max-width: 80%;
-}
+	.location-sub {
+		max-width: 80%;
+	}
 
-.clinic {
-    border: none;
-    width: 420px;
-    padding: 15px;
-    cursor: pointer;
-    font-family: 'Open sans', sans-serif;
-    font-weight: 700;
-    background-color: var(--bluebutton);
-    color: var(--white); 
+	.clinic {
+		border: none;
+		width: 420px;
+		padding: 15px;
+		cursor: pointer;
+		font-family: "Open sans", sans-serif;
+		font-weight: 700;
+		background-color: var(--bluebutton);
+		color: var(--white);
+	}
 }
-}
-
 
 /****Testing-Vaccination CSS****/
 
 body {
-    background-color: var(--white);
-    overflow-x: hidden;
-    
+	background-color: var(--white);
+	overflow-x: hidden;
 }
 
 /******* NAVBAR *********/
+/* main {
+	width: 90%;
+	max-width: 1400px;
+	margin: 0 auto;
+	/* border: rebeccapurple solid 3px; */
 
 /*---------Testing-Vaccination---------*/
-.testing-header { 
-    background-size: 100%;
-    background-repeat: no-repeat;
-    justify-content: center;
-    background-image: url(images/testing-background.png);
-    background-position: center;
-    height: 500px; 
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 4rem;
+.testing-header {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	justify-content: center;
+	background-image: url(images/testing-background.png);
+	background-position: center;
+	height: 500px;
+	width: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 4rem;
 }
 
 .covid-label {
-    padding: 200px;
+	padding: 200px;
 }
 
-
-.testing-requirement { 
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    margin-left: 1rem;
-    margin-top: .5rem;
+.testing-requirement {
+	font-family: "Open Sans", sans-serif;
+	font-size: 30px;
+	margin-left: 1rem;
+	margin-top: 0.5rem;
 }
 
 .test-sub {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    margin-left: 1rem;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	margin-left: 1rem;
 }
 
 ul {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    list-style-type: circle;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	list-style-type: circle;
 }
 
 .location-section {
-    margin-top: 1rem;
-    display: block;
-    margin: 1rem;
-    
+	margin-top: 1rem;
+	display: block;
+	margin: 1rem;
 }
 
 .location-heading {
-    font-family: 'Open sans', sans-serif;
-    font-size: 30px;
-    margin-top: 5rem;
+	font-family: "Open sans", sans-serif;
+	font-size: 30px;
+	margin-top: 5rem;
 }
 
 .location-sub {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    margin-left: 5px;
-    display: block;
-    margin-top: -400px;
-    max-width: 45%;
-    line-height: 30px;
-
-
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-left: 5px;
+	display: block;
+	margin-top: -400px;
+	max-width: 45%;
+	line-height: 30px;
 }
 
 span {
-    color: var(--green);
+	color: var(--green);
 }
 
 .doctor-img {
-    margin-left: 700px;
-    position: relative;
-    top: -90px;
-    height: 400px; 
+	margin-left: 700px;
+	position: relative;
+	top: -90px;
+	height: 400px;
 }
 
-.vaccination-header{
-    margin-top: 15rem;
+.vaccination-header {
+	margin-top: 15rem;
 }
 .vaccination-header {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    background-image: url(images/vaccine-background.png);
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 30px;
+	text-align: center;
+	background-image: url(images/vaccine-background.png);
+	background-repeat: no-repeat;
+	height: 500px;
+	width: 100%;
 }
 
 .vaccine-label {
-padding: 200px;
+	padding: 200px;
 }
 
 .vaccine-sub {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    margin-left: 1rem;
-    margin-top: 3.5rem;
+	font-family: "Open Sans", sans-serif;
+	font-size: 30px;
+	margin-left: 1rem;
+	margin-top: 3.5rem;
 }
 
 .vaccine-info {
-    font-family: 'Open sans', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 1rem;
-    line-height: 30px;
-
+	font-family: "Open sans", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 1rem;
+	line-height: 30px;
 }
 
 .buttons {
-    margin-top: -20px;
+	margin-top: -20px;
 }
 
-
 .clinic {
-   border: none;
-   width: 420px;
-   padding: 15px;
-   margin: 80px;
-   cursor: pointer;
-   font-family: 'Open sans', sans-serif;
-   font-weight: 700;
-   background-color: var(--bluebutton);
-   color: var(--white);
+	border: none;
+	width: 420px;
+	padding: 15px;
+	margin: 80px;
+	cursor: pointer;
+	font-family: "Open sans", sans-serif;
+	font-weight: 700;
+	background-color: var(--bluebutton);
+	color: var(--white);
 }
 
 .clinic:hover {
-    color: var(--bluebutton);
-    background-color: var(--white);
-    border: 2px solid var(--bluebutton);
-    font-weight: 700;
+	color: var(--bluebutton);
+	background-color: var(--white);
+	border: 2px solid var(--bluebutton);
+	font-weight: 700;
 }
 
 .campus {
-    border: none;
-    border: none;
-    width: 420px;
-    padding: 15px;
-    margin: 70px;
-    cursor: pointer;
-    font-family: 'Open sans', sans-serif;
-    font-weight: 700;
-    background-color: var(--greenbutton);
-    color: var(--white);
+	border: none;
+	border: none;
+	width: 420px;
+	padding: 15px;
+	margin: 70px;
+	cursor: pointer;
+	font-family: "Open sans", sans-serif;
+	font-weight: 700;
+	background-color: var(--greenbutton);
+	color: var(--white);
 }
 
 .campus:hover {
-    color: var(--greenbutton);
-    background-color: var(--white);
-    border: 2px solid var(--greenbutton);
-    font-weight: 700;
+	color: var(--greenbutton);
+	background-color: var(--white);
+	border: 2px solid var(--greenbutton);
+	font-weight: 700;
 }
 .proof-heading {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    margin-left: 1rem;
-    margin-top: 3.5rem;
+	font-family: "Open Sans", sans-serif;
+	font-size: 30px;
+	margin-left: 1rem;
+	margin-top: 3.5rem;
 }
 .vaccination-proof {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    margin: 1rem;
-    line-height: 30px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 1rem;
+	line-height: 30px;
 }
 
 .vaccine-doc {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    margin-left: 1rem;
-    margin-top: 4rem;
-  
+	font-family: "Open Sans", sans-serif;
+	font-size: 30px;
+	margin-left: 1rem;
+	margin-top: 4rem;
 }
 
 .vaccination-info {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    margin-left: 5px;
-    max-width: 63%;
-    margin: 1rem;
-    line-height: 30px;
-}
-    
-.couple {
-    margin-right: 120px;
-    margin-top: -30px;
-    float: right;
-    height:320px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin-left: 5px;
+	max-width: 63%;
+	margin: 1rem;
+	line-height: 30px;
 }
 
+.couple {
+	margin-right: 120px;
+	margin-top: -30px;
+	float: right;
+	height: 320px;
+}
 
 .vaccination-btn {
-    border: none;
-    width: 420px;
-    padding: 15px;
-    margin: 50px;
-    cursor: pointer;
-    font-family: 'Open sans', sans-serif;
-    font-weight: 700;
-    background-color: var(--bluebutton);
-    color: var(--white);
-    
+	border: none;
+	width: 420px;
+	padding: 15px;
+	margin: 50px;
+	cursor: pointer;
+	font-family: "Open sans", sans-serif;
+	font-weight: 700;
+	background-color: var(--bluebutton);
+	color: var(--white);
 }
 
-.vaccination-btn:hover{
-    color: var(--bluebutton);
-    background-color: var(--white);
-    border: 2px solid var(--bluebutton);
-    font-weight: 700;
+.vaccination-btn:hover {
+	color: var(--bluebutton);
+	background-color: var(--white);
+	border: 2px solid var(--bluebutton);
+	font-weight: 700;
 }
-
-
