@@ -36,7 +36,6 @@ function Header() {
 							)}
 						</section>
 					</div>
-
 					<nav className={active ? "nav active" : "nav"}>
 						<ul className="nav-links">
 							<Link to="/">

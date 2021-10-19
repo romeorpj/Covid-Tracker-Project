@@ -9,5 +9,4 @@ const CovidDashboard = () => {
 		</section>
 	);
 };
-
 export default CovidDashboard;

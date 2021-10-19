@@ -13,7 +13,6 @@ const DesktopFooter = () => {
 								className="logo-img"
 							/>
 						</Link>
-
 						<p>CORONA TRACKER</p>
 					</div>
 

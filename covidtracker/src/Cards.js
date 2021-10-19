@@ -28,15 +28,6 @@ function Cards(props) {
 
 				<br />
 			</div>
-
-			{/* <div className="cards__info usa">
-					<p>U.S.A Covid Cases </p>
-					<p>0</p>
-				</div>
-				<div className="cards__info usa">
-					<p>U.S.A Deaths </p>
-					<p>0</p>
-				</div> */}
 		</div>
 	);
 }

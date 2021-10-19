@@ -6,8 +6,7 @@ const LandingPage = () => {
 		<div className="dashboard-container">
 			<main>
 				<h1>COVID-19 DASHBOARD</h1>
-				{/* <div className="dashboard-wrapper">
-					<div className="dashboard-element"> */}
+				{/* <div className="dashboard-wrapper">*/}
 
 				<CovidDashboard />
 

@@ -318,11 +318,7 @@ hr {
 	color: #cc1034;
 	letter-spacing: 0.05rem;
 }
-/* .cards__state{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-} */
+
 .dashboard-element__para {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 600;

@@ -3,7 +3,6 @@ import Cards from "./Cards";
 import axios from "axios";
 
 function SearchInput() {
-	// const [singleState, setSingleState] = useState("");
 	const [location, setLocation] = useState("");
 	const [stateObj, setStateObj] = useState("");
 
