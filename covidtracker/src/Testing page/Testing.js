@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import React from "react";
 import "./Testing.css";
 import doctor from "./images/—Pngtree—black man black doctor doctors_3921468 1.png";

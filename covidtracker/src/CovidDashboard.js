@@ -1,7 +1,13 @@
-import React from "react";
+import SearchInput from "./SearchInput";
 
 const CovidDashboard = () => {
-	return <div></div>;
+	return (
+		<section className="dashboard-wrapper">
+			<div className="dashboard-elements">
+				<SearchInput />
+			</div>
+		</section>
+	);
 };
 
 export default CovidDashboard;

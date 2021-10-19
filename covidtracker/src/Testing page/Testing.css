@@ -85,12 +85,12 @@ body {
 }
 
 /******* NAVBAR *********/
-/* main {
+main {
 	width: 90%;
 	max-width: 1400px;
 	margin: 0 auto;
 	/* border: rebeccapurple solid 3px; */
-
+}
 /*---------Testing-Vaccination---------*/
 .testing-header {
 	background-size: 100%;
