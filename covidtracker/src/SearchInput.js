@@ -16,7 +16,7 @@ function SearchInput() {
 			.catch((err) => {
 				console.log(`${err}`);
 			});
-	}, [location]);
+	}, [location, stateObj]);
 
 	// const onSubmit = (e) => {
 	// 	e.preventDefault();
@@ -46,7 +46,7 @@ function SearchInput() {
 			</form>
 
 			<hr />
-			<h2 className="state-callout">Updated Covid Info For {stateObj.state}</h2>
+			<h2 className="state-callout">{stateObj.state} Coronavirus</h2>
 			<Cards yourState={stateObj} />
 			{/* <Cards stateName={singleState} /> */}
 		</div>

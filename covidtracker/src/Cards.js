@@ -10,13 +10,15 @@ function Cards(props) {
 		<div className="cards">
 			<div className="cards__info">
 				<p className="cards__headline">
-					Covid Cases in {props.yourState.state}
+					Total Cases in {props.yourState.state}
 				</p>
 				<p className="cards__data">{prettyNum(props.yourState.cases)}</p>
 			</div>
 			<div className="cards__info">
 				<p className="cards__headline">Recovered: </p>
-				<p className="cards__data">{prettyNum(props.yourState.recovered)}</p>
+				<p className="cards__data-green">
+					{prettyNum(props.yourState.recovered)}
+				</p>
 			</div>
 			<div className="cards__info">
 				<p className="cards__headline">Deaths: </p>

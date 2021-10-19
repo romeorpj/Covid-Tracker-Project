@@ -305,6 +305,11 @@ hr {
 	flex: 1;
 	box-shadow: 0 0.5px 0 0 #ffffff inset, 0 1px 2px 0 #b3b3b3;
 	padding: 10px;
+	transform: translateY(0px);
+	transition: all 300ms ease-in-out;
+}
+.cards__info:hover {
+	transform: translateY(-10px);
 }
 .cards__headline {
 	font-size: 1.35rem;
@@ -316,6 +321,12 @@ hr {
 	font-size: 4rem;
 	font-weight: bold;
 	color: #cc1034;
+	letter-spacing: 0.05rem;
+}
+.cards__data-green {
+	font-size: 4rem;
+	font-weight: bold;
+	color: #10cc5e;
 	letter-spacing: 0.05rem;
 }
 
