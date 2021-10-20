@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,16 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
+
 # Covid-Tracker-Project
+
 Project Scope Statement
-The Covid-19 Tracker is designed to provide students, faculty, and staff about the number of confirmed cases, students in isolation/quarantine, and recoveries.  The tracker will provide individuals with the neccessary resources such as location of testing and vaccination sites and the procedures to take if they've been exposed to someone with Covid-19 or have tested positive for it.
+The Covid-19 Tracker is designed to provide students, faculty, and staff about the number of confirmed cases, students in isolation/quarantine, and recoveries. The tracker will provide individuals with the neccessary resources such as location of testing and vaccination sites and the procedures to take if they've been exposed to someone with Covid-19 or have tested positive for it.
 
 Required Pages
 Home Page/ Landing Page
 What to do if you tested positive
 Testing/Vaccination sites
 FAQs
-About  us
+About us
 Contact Us
->>>>>>> 6c7ebcccba6c3cfe76540e7524b50468d98c9032
