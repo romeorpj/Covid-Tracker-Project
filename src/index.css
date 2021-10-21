@@ -99,6 +99,7 @@ header {
 	height: 12vh;
 	background: #f9f9f9;
 	position: relative;
+	overflow: hidden;
 }
 
 .mobile-menu {
@@ -136,7 +137,7 @@ header {
 header nav {
 	position: fixed;
 	background: #3c6fc0;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	display: flex;
 	align-items: center;
@@ -144,7 +145,8 @@ header nav {
 	transform: translateX(100%);
 	opacity: 0;
 	transition: all 300ms ease-in-out;
-	overflow: hidden;
+
+	z-index: 8;
 }
 
 .nav.active {
@@ -154,7 +156,7 @@ header nav {
 
 .nav-links span {
 	/* font-size: clamp(2rem, 2.5rem, 2.8rem); */
-	font-size: 8vw;
+	font-size: 7vw;
 	font-weight: 700;
 	color: white;
 	position: relative;
@@ -222,29 +224,36 @@ main h1 {
 	background: #f5f6fa;
 	margin-bottom: 30px;
 	/* border: red solid 3px; */
+	/* z-index: -776; */
 	border-radius: 15px;
-	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+	box-shadow: 0 0.5px 0 0 #ffffff inset, 0 1px 2px 0 #b3b3b3;
+	/* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
 		rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
-		rgba(0, 0, 0, 0.07) 0px 16px 16px;
+		rgba(0, 0, 0, 0.07) 0px 16px 16px; */
 }
 /* ***MOBILE SEARCH INPUTS STYLING*** */
 .dashboard-elements {
 	width: 100%;
-	/* height: 200px; */
-
-	/* border: purple solid 3px; */
 }
+.search-inputs {
+	width: 100%;
+}
+
 .search__labels {
 	font-size: 1.8rem;
 	margin-right: 20px;
 }
-.search-inputs {
+form {
 	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
 	flex-direction: column;
 }
 .inputs {
 	width: 100%;
-	max-width: 450px;
+	max-width: 400px;
 	height: 40px;
 	border-radius: 5px;
 	padding: 20px;
@@ -252,6 +261,8 @@ main h1 {
 	margin-bottom: 20px;
 	background: transparent;
 	font-size: 2rem;
+
+	/* flex: 1; */
 }
 
 .search-btn {
@@ -264,16 +275,16 @@ main h1 {
 	letter-spacing: 0.2rem;
 	transition: background 150ms ease-in;
 	cursor: pointer;
+
+	/* flex: 1; */
 }
-/* .search-btn:hover {
+.search-btn:hover {
 	background: #03a9f4;
-	box-shadow: 1.6px 1.6px 6.5px rgba(0, 0, 0, 0.04),
-		5.4px 5.4px 21.9px rgba(0, 0, 0, 0.06), 24px 24px 98px rgba(0, 0, 0, 0.1);
 }
 
 .search-btn:active {
-	transform: scale(0.8);
-} */
+	transform: scale(0.95);
+}
 hr {
 	border: 1px solid rgba(0, 0, 0, 0.04);
 	width: 100%;
@@ -307,6 +318,8 @@ hr {
 	padding: 10px;
 	transform: translateY(0px);
 	transition: all 400ms ease-in-out;
+	z-index: 5;
+	/* border: #3c6fc0 solid 2px; */
 }
 .cards__info:hover {
 	transform: translateY(-10px);
@@ -317,17 +330,15 @@ hr {
 	color: rgb(180, 180, 180);
 	letter-spacing: 0.05rem;
 }
-.cards__data {
+.cards__data,
+.cards__data-green {
 	font-size: 4rem;
 	font-weight: bold;
 	color: #cc1034;
 	letter-spacing: 0.05rem;
 }
 .cards__data-green {
-	font-size: 4rem;
-	font-weight: bold;
 	color: #10cc5e;
-	letter-spacing: 0.05rem;
 }
 
 .dashboard-element__para {
@@ -515,7 +526,7 @@ footer nav ul li {
 }
 
 .email-btn:active {
-	transform: scale(0.8);
+	transform: scale(0.95);
 }
 
 .mobile-footer-resources {
@@ -537,7 +548,7 @@ footer nav ul li {
 
 @media only screen and (min-width: 752px) {
 	.nav-links span {
-		font-size: 1rem;
+		font-size: 2rem;
 		font-weight: 700;
 		color: black;
 		position: relative;
@@ -614,7 +625,7 @@ footer nav ul li {
 		padding-top: 12px;
 	}
 	.nav-links span {
-		font-size: 2rem;
+		font-size: 1.9rem;
 		font-weight: 700;
 		color: black;
 		position: relative;
