@@ -45,6 +45,7 @@ a:not([class]) {
     transform: translateX(60%);
     width: 600px;
     text-align: center;
+
 }
 .aboutpg_camp, .aboutpg_meet, .aboutpg_cov {
     font-size: 3.5em;
@@ -125,8 +126,12 @@ a:not([class]) {
         position: absolute;
         transform: translateX(7%);
         width: 600px;
-        text-align: center; 
+        text-align: center;
+        z-index: -1; 
         
+    }
+    .aboutpg_banner {
+        z-index: -2;
     }
     .aboutpg_camp, .aboutpg_meet, .aboutpg_cov {
         font-size: 3em;
