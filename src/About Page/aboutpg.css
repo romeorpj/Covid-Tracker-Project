@@ -34,7 +34,7 @@ a:not([class]) {
     flex-direction: column;
     width: 90%;
     margin-left: 5%;
-    margin-top: 15%;
+    margin-top: 2%;
     padding-bottom: 15%;
 }
 .aboutpg_h1 {
@@ -45,13 +45,16 @@ a:not([class]) {
     transform: translateX(60%);
     width: 600px;
     text-align: center;
+
 }
 .aboutpg_camp, .aboutpg_meet, .aboutpg_cov {
     font-size: 3.5em;
+    margin-top: 3%;
 }
+
 .aboutpg_p1 {
     width: 95%;
-    font-size: 2.5em;
+    font-size: 3em;
     margin-left: 2.5%;
 }
 .aboutpg_gridwrap {
@@ -72,17 +75,19 @@ a:not([class]) {
 }
 .aboutpg_ulrec {
     display: block;
-    margin-top: 0%;
+    margin-top: 3%;
     margin-left: 5%;
     margin-bottom: -3.5%;
 }
 .aboutpg_urrec {
     display: block;
-    margin-left: 72vw;
+    margin-left: 61.3vw;
+    width: 100%;
 }
 .aboutpg_brrec {
     display: block;
-    margin-left: 72vw;
+    margin-left: 61.3vw;
+    width: 100%;
     margin-top: -3.5%;
 }
 .aboutpg_blrec {
@@ -95,12 +100,14 @@ a:not([class]) {
     font-size: 2em;
 }
 .aboutpg_cov {
-    margin-top: 10%;
+    margin-top: 7%;
+    margin-bottom: 3%;
 }
 .aboutpg_p2 {
     width: 95%;
-    font-size: 2.1em;
+    font-size: 3em;
     margin-left: 2.5%;
+    margin-top: 3%;
 }
 
 @media (max-width: 768px) {
@@ -109,20 +116,25 @@ a:not([class]) {
         flex-direction: column;
         width: 90%;
         margin-left: 5%;
-        margin-top: 15%;
+        margin-top: 2%;
         padding-bottom: 15%;
         font-size: .7em;
     }
     .aboutpg_h1 {
         font-size: 4em;
-        margin-top: 3em;
+        margin-top: 5em;
         position: absolute;
         transform: translateX(7%);
         width: 600px;
         text-align: center;
+        z-index: -1; 
+        
+    }
+    .aboutpg_banner {
+        z-index: -2;
     }
     .aboutpg_camp, .aboutpg_meet, .aboutpg_cov {
-        font-size: 2.5em;
+        font-size: 3em;
     }
     .aboutpg_ulrec, .aboutpg_blrec, .aboutpg_urrec, .aboutpg_brrec {
         display: none;
@@ -133,7 +145,7 @@ a:not([class]) {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         justify-items: center; 
         margin-left: 6%;
-        margin-top: -1%;
+        margin-top: 3%;
         margin-bottom: 10%;
         border: #2980B9 solid 30px;
         padding-top: 3%;

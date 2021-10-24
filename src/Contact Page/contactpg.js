@@ -6,7 +6,7 @@ export default function contactpg() {
 	return (
 		<div className="contactpg_container">
 			<div className="contactpg_head">
-				<h1 className="contactpg_h1">Contact Us</h1>
+				<div className="contactpg_h1">Contact Us</div>
 				<img src={pic} className="contactpg_pic" alt="contact us" />
 			</div>
 
@@ -44,8 +44,8 @@ export default function contactpg() {
 					<br />
 					<textarea
 						name="description"
-						cols="84"
-						rows="18"
+						cols="78"
+						rows="10"
 						placeholder=""
 						maxlength="5000"
 						className="contactpg_box"
