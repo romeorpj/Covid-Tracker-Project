@@ -16,42 +16,9 @@ const Body = styled.body`
 		margin: 0;
 		height: 100%;
 		background: none;
-	}
+	};
 `;
 
-// const Header = styled.div`
-// 	width: 100%;
-// 	position: relative;
-// 	height: 150px;
-// 	background: #f9f9f9;
-
-// 	@media (min-width: 768px) {
-// 		position: relative;
-// 		width: 100%;
-// 		height: 183px;
-// 		background: #f9f9f9;
-// 		border: 1px solid #c4c4c4;
-// 		box-sizing: border-box;
-// 		position: relative;
-// 	} ;
-// `;
-
-// const Footer = styled.div`
-// 	width: 100%;
-// 	position: relative;
-// 	height: 150px;
-// 	background: #f9f9f9;
-// 	@media (min-width: 768px) {
-// 		position: relative;
-// 		width: 100%;
-// 		height: 183px;
-// 		left: 0px;
-// 		top: 850px;
-// 		background: #f9f9f9;
-// 		border: 1px solid #c4c4c4;
-// 		box-sizing: border-box;
-// 	} ;
-// `;
 
 const Title = styled.div`
 	left: 20px;
@@ -74,7 +41,6 @@ const Title = styled.div`
 		font-style: normal;
 		font-weight: bold;
 		font-size: 64px;
-		position: relative;
 		top: 260px;
 	} ;
 `;
@@ -88,6 +54,7 @@ const Input = styled.input`
 	border: 1px solid #c3c7d2;
 	top: 437.93px;
 	font-size: 16px;
+	margin-left: 20px;
 
 	@media (min-width: 768px) {
 		padding: 1em;
@@ -96,8 +63,8 @@ const Input = styled.input`
 		background: rgba(196, 196, 196, 0.2);
 		border: 1px solid #c3c7d2;
 		top: 350px;
-		position: relative;
-		left: 175px;
+		margin-left:10em;
+		margin-top: 2em;
 		font-size: 18px;
 	} ;
 `;
@@ -119,7 +86,6 @@ const Help = styled.div`
 
 	@media (min-width: 768px) {
 		top: 400px;
-		position: relative;
 		color: rgba(0, 0, 0, 0.5);
 		display: flex;
 		flex-direction: column;
@@ -129,13 +95,14 @@ const Help = styled.div`
 		font-style: normal;
 		font-size: 28px;
 		line-height: 2px;
+		padding-top: 1em;
+		padding-bottom: 2em;
 	} ;
 `;
 
 const Section1 = styled.div`
 	text-align: center;
 	font-size: 24px;
-	position: relative;
 	display: inline-block;
 	font-weight: bold;
 	font-family: Open Sans;
@@ -144,8 +111,7 @@ const Section1 = styled.div`
 
 	@media (min-width: 768px) {
 		top: 600px;
-		position: relative;
-		left: 50px;
+		margin-left: 1.5em;
 		font-size: 36px;
 		font-weight: bold;
 		font-family: Open Sans;
@@ -157,7 +123,6 @@ const Section1 = styled.div`
 const Section2 = styled.div`
 	text-align: center;
 	font-size: 24px;
-	position: relative;
 	display: inline-block;
 	font-weight: bold;
 	font-family: Open Sans;
@@ -166,14 +131,13 @@ const Section2 = styled.div`
 	left: 2.5em;
 
 	@media (min-width: 768px) {
-		left: 50px;
+		margin-left: 1.5em;
 		font-size: 36px;
 		font-weight: bold;
 		font-family: Open Sans;
 		font-style: normal;
 		text-transform: uppercase;
 		top: 600px;
-		position: relative;
 		display: inline-block;
 	} ;
 `;
@@ -181,7 +145,6 @@ const Section2 = styled.div`
 const Section3 = styled.div`
 	text-align: center;
 	font-size: 24px;
-	position: relative;
 	display: inline-block;
 	font-weight: bold;
 	font-family: Open Sans;
@@ -192,8 +155,7 @@ const Section3 = styled.div`
 	@media (min-width: 768px) {
 		display: inline-block;
 		top: 600px;
-		position: relative;
-		left: 50px;
+		margin-left: 1.5em;
 		font-size: 36px;
 		font-weight: bold;
 		font-family: Open Sans;
@@ -209,7 +171,6 @@ const AccordionSection = styled.div`
 	font-size: 18px;
 
 	@media (min-width: 768px) {
-		position: relative;
 		font-family: Open Sans;
 		font-style: normal;
 		font-weight: bold;
@@ -272,6 +233,7 @@ const Dropdown = styled.div`
 		align-items: center;
 		font-size: 25px;
 		line-height: 35px;
+		padding-top: 1.5em;
 		padding-bottom: 3em;
 		padding-left: 1em;
 	} ;

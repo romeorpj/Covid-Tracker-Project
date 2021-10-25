@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* Box sizing rules and reset*/
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	/*margin: 0;
+	padding: 0;*/
+	border: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"],
+li {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+html {
+	font-family: "Roboto", sans-serif;
+	/* resetting font size to 10px makes rem math much easier*/
+	font-size: 10px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+/* Set core body defaults */
+body {
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+html,
+body,
+#root {
+	min-height: 100vh;
+}
+
+/* #root {
+	display: flex;
+	flex-direction: column;
+} */
+P,
+li {
+	font-size: 1.6rem;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+/* ########## END GLOBAL ########## */
+
+/* ***MOBILE COVID TRACKER DASHBOARD*** */
+
+.dashboard-container {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+main {
+	margin-bottom: 30px;
+}
+
+main h1 {
+	margin: 30px 0px;
+	font-size: 2.5rem;
+}
+/* ***MOBILE COVID TRACKER DASHBOARD ELEMENTS*** */
+.dashboard-wrapper {
+	width: 100%;
+	/* no need for max width, already controlled by container */
+	padding: 20px;
+	background: #f5f6fa;
+	margin-bottom: 30px;
+	/* border: red solid 3px; */
+	/* z-index: -776; */
+	border-radius: 15px;
+	box-shadow: 0 0.5px 0 0 #ffffff inset, 0 1px 2px 0 #b3b3b3;
+	/* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+		rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+		rgba(0, 0, 0, 0.07) 0px 16px 16px; */
+}
+/* ***MOBILE SEARCH INPUTS STYLING*** */
+.dashboard-elements {
+	width: 100%;
+}
+.search-inputs {
+	width: 100%;
+}
+
+.search__labels {
+	font-size: 1.8rem;
+	margin-right: 20px;
+}
+form {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+	flex-direction: column;
+}
+.inputs {
+	width: 100%;
+	max-width: 400px;
+	height: 40px;
+	border-radius: 5px;
+	padding: 20px;
+	border: #aaaaaa 1px solid;
+	margin-bottom: 20px;
+	background: transparent;
+	font-size: 2rem;
+
+	/* flex: 1; */
+}
+
+.search-btn {
+	width: 120px;
+	height: 40px;
+	border-radius: 5px;
+	background: #29b6f6;
+	color: white;
+	font-size: 1.7rem;
+	letter-spacing: 0.2rem;
+	transition: background 150ms ease-in;
+	cursor: pointer;
+
+	/* flex: 1; */
+}
+.search-btn:hover {
+	background: #03a9f4;
+}
+
+.search-btn:active {
+	transform: scale(0.95);
+}
+hr {
+	border: 1px solid rgba(0, 0, 0, 0.04);
+	width: 100%;
+	margin-top: 20px;
+}
+/* ***CARDS STYLING*** */
+.state-callout {
+	padding: 20px;
+	font-size: 2rem;
+	/* border: #5f3cc0 solid 2px; */
+}
+.cards {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	/* border: #3c6fc0 solid 2px; */
+}
+.cards__info {
+	width: 300px;
+	background: white;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	flex: 1;
+	box-shadow: 0 0.5px 0 0 #ffffff inset, 0 1px 2px 0 #b3b3b3;
+	padding: 10px;
+	transform: translateY(0px);
+	transition: all 400ms ease-in-out;
+	z-index: 5;
+	/* border: #3c6fc0 solid 2px; */
+}
+.cards__info:hover {
+	transform: translateY(-10px);
+}
+.cards__headline {
+	font-size: 1.35rem;
+	font-weight: bold;
+	color: rgb(180, 180, 180);
+	letter-spacing: 0.05rem;
+}
+.cards__data,
+.cards__data-green {
+	font-size: 4rem;
+	font-weight: bold;
+	color: #cc1034;
+	letter-spacing: 0.05rem;
+}
+.cards__data-green {
+	color: #10cc5e;
+}
+
+.dashboard-element__para {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-size: 1.7rem;
+	margin-bottom: 30px;
+}
+
+.guidance-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/* border: #cc1034 solid 2px; */
+	width: 90%;
+	margin: auto;
+}
+
+.guidance-section img {
+	width: 40%;
+	min-width: 340px;
+}
+
+.guidance-section__text h2 {
+	margin-top: 20px;
+	margin-bottom: 6px;
+	font-size: 2.2rem;
+}
+
+.guidance-section__text p {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-size: 1.7rem;
+}
+
+/* ***DESKTOP MEDIA QUERIES*** */
+
+@media only screen and (min-width: 769px) {
+	/* ***DASHBOARD QUERIES*** */
+	.dashboard-container {
+		/* width: 100%; */
+		width: 90%;
+
+		max-width: 1400px;
+		margin: 0 auto;
+		min-height: calc(100vh - 332px);
+		/* border: rebeccapurple solid 3px; */
+	}
+	main {
+		margin-bottom: 30px;
+	}
+	main h1 {
+		margin: 50px 0px;
+		font-size: 2.5rem;
+	}
+	.dashboard-wrapper {
+		width: 100%;
+		margin-bottom: 80px;
+		/* border: red 2px solid; */
+	}
+	.dashboard-element {
+		width: 100%;
+		height: 200px;
+		/* padding: 40px; */
+		margin: auto;
+
+		border-radius: 5px;
+		box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+			rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+			rgba(0, 0, 0, 0.07) 0px 16px 16px;
+	}
+	.dashboard-element__para {
+		margin-bottom: 60px;
+	}
+
+	/* ***DESKTOP COVID TRACKER DASHBOARD ELEMENTS*** */
+	.corona-dash {
+		display: flex;
+		justify-content: flex-end;
+	}
+	/* ***OVERALL GUIDANCE SECTION STYLING*** */
+	.guidance-section {
+		/* border: red 2px solid; */
+		width: 90%;
+		margin: auto;
+	}
+	.guidance-section img {
+		width: 40%;
+		min-width: 340px;
+	}
+	.guidance-section__text {
+		width: 60%;
+		min-width: 600px;
+	}
+}

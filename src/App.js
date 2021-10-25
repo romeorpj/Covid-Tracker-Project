@@ -1,10 +1,10 @@
-import Header from "./Header";
-import LandingPage from "./LandingPage";
+import Header from "./Header/Header";
+import LandingPage from "./LandingPage/LandingPage";
 import Testing from "./Testing page/Testing";
 import About from "./About Page/About";
 import Faq from "./FAQ page/Faq";
 import Contact from "./Contact Page/contactpg";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {

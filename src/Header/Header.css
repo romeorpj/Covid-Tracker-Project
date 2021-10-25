@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* Box sizing rules and reset*/
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	/*margin: 0;
+	padding: 0;*/
+	border: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"],
+li {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+html {
+	font-family: "Roboto", sans-serif;
+	/* resetting font size to 10px makes rem math much easier*/
+	font-size: 10px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+/* Set core body defaults */
+body {
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+html,
+body,
+#root {
+	min-height: 100vh;
+}
+
+/* #root {
+	display: flex;
+	flex-direction: column;
+} */
+P,
+li {
+	font-size: 1.6rem;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* ***MOBILE NAVIGATION STYLES*** */
+
+header {
+	width: 100%;
+	height: 12vh;
+	background: #f9f9f9;
+	position: relative;
+	overflow: hidden;
+}
+
+.mobile-menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	z-index: 10;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mobile-title {
+	font-size: clamp(1rem, 2rem, 7rem);
+	font-weight: 700;
+	color: #3c6fc0;
+	transition: color 250ms ease-out;
+}
+
+.white-mobile-title {
+	color: white;
+	font-size: clamp(1rem, 2rem, 7rem);
+	font-weight: 700;
+	transition: color 250ms ease-out;
+}
+
+header nav {
+	position: fixed;
+	background: #3c6fc0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translateX(100%);
+	opacity: 0;
+	transition: all 300ms ease-in-out;
+
+	z-index: 8;
+}
+
+.nav.active {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.nav-links span {
+	/* font-size: clamp(2rem, 2.5rem, 2.8rem); */
+	font-size: 7vw;
+	font-weight: 700;
+	color: white;
+	position: relative;
+	overflow: hidden;
+}
+
+.nav-links span::after {
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 8px;
+	background: yellowgreen;
+	border-radius: 5px;
+	left: 50%;
+	bottom: -13px;
+	margin-top: 30px;
+	opacity: 0;
+	transition: all 500ms ease-in-out;
+}
+
+.nav-links span:hover::after {
+	left: 0px;
+	opacity: 1;
+}
+
+.nav-links li {
+	margin-bottom: 25px;
+}
+
+.fa-bars {
+	font-size: 22px;
+	color: #1b1b1b;
+}
+
+.fa-times {
+	font-size: 25px;
+}
+
+.white-nav {
+	color: white;
+	transition: color 250ms ease-out;
+}
+
+/* ***DESKTOP HEADER QUERIES 752px*** */
+@media only screen and (min-width: 752px) {
+	.nav-links span {
+		font-size: 2rem;
+		font-weight: 700;
+		color: black;
+		position: relative;
+		margin-bottom: 0px;
+	}
+	.nav-links span:hover::after {
+		content: " ";
+		position: absolute;
+		width: 100%;
+		height: 8px;
+		transform: translateX(20%);
+		background: yellowgreen;
+		border-radius: 5px;
+		overflow: hidden;
+		transition: all 500ms ease-in-out;
+	}
+	.nav-links span:hover::after {
+		transform: translateX(0%);
+		left: 0px;
+		opacity: 1;
+	}
+}
+
+/* ***DESKTOP HEADER QUERIES 769px*** */
+@media only screen and (min-width: 769px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 9rem;
+	}
+	.header-container {
+		width: 100%;
+		max-width: 1700px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.mobile-menu {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 30%;
+		position: static;
+	}
+	.hamburger-menu {
+		display: none;
+	}
+	.logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	header nav {
+		position: static;
+		background: none;
+		width: 100%;
+		height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		transform: translateX(0%);
+		opacity: 1;
+		transition: none;
+		overflow: hidden;
+	}
+	.nav-links {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		width: 90%;
+		overflow: hidden;
+		padding-top: 12px;
+	}
+	.nav-links span {
+		font-size: 1.9rem;
+		font-weight: 700;
+		color: black;
+		position: relative;
+		margin-bottom: 0px;
+	}
+	.nav-links span:hover::after {
+		content: " ";
+		position: absolute;
+		width: 100%;
+		height: 8px;
+		transform: translateX(20%);
+		background: yellowgreen;
+		border-radius: 5px;
+		overflow: hidden;
+		transition: all 500ms ease-in-out;
+	}
+	.nav-links span:hover::after {
+		transform: translateX(0%);
+		left: 0px;
+		opacity: 1;
+	}
+}
+
+/* increase nav links font size at 980px and above */
+
+@media only screen and (min-width: 980px) {
+	.nav-links li {
+		font-size: 2.4rem;
+		font-weight: 700;
+	}
+}

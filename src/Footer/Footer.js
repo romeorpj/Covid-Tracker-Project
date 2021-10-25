@@ -1,4 +1,5 @@
-import DesktopFooter from "./DesktopFooter";
+import DesktopFooter from "../DesktopFooter/DesktopFooter";
+import "../Footer/Footer.css";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

@@ -1,6 +1,5 @@
 import CovidDashboard from "./CovidDashboard";
-
-import "./index.css";
+import "../LandingPage/LandingPage.css";
 const LandingPage = () => {
 	return (
 		<div className="dashboard-container">
