@@ -1,4 +1,4 @@
-import DesktopFooter from "../DesktopFooter/DesktopFooter";
+import DesktopFooter from "./DesktopFooter";
 import "../Footer/Footer.css";
 import { Link } from "react-router-dom";
 
