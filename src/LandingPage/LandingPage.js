@@ -7,7 +7,6 @@ const LandingPage = () => {
 				<h1>COVID-19 DASHBOARD</h1>
 
 				<CovidDashboard />
-
 				<p className="dashboard-element__para">
 					The university is continually monitoring conditions to determine what
 					mitigation actions the campus community should take to keep themselves
