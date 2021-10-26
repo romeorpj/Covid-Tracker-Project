@@ -1,15 +1,12 @@
 import CovidDashboard from "./CovidDashboard";
-
-import "./index.css";
+import "../LandingPage/LandingPage.css";
 const LandingPage = () => {
 	return (
 		<div className="dashboard-container">
 			<main>
 				<h1>COVID-19 DASHBOARD</h1>
-				{/* <div className="dashboard-wrapper">*/}
 
 				<CovidDashboard />
-
 				<p className="dashboard-element__para">
 					The university is continually monitoring conditions to determine what
 					mitigation actions the campus community should take to keep themselves
