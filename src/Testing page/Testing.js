@@ -32,7 +32,7 @@ function Testing() {
 
 				<div className="location-section">
 					<h3 className="location-heading">Testing Location</h3>
-					<img src={doctor} />
+					<img src={doctor} alt="doctor"/>
 					<p className="location-sub">
 						Testing is ongoing throughout the semester. Testing will occur every
 						from 8:00AM - 6:00PM. <span>Walk-in only.</span>Please follow the
@@ -90,7 +90,7 @@ function Testing() {
 					</p>
 
 					<h3 className="vaccine-doc">Vaccination Document</h3>
-					<img src={couple} />
+					<img src={couple} alt="college couple"/>
 					<p className="vaccination-info">
 						In order to be considered fully vaccinated, individuals should have
 						obtained complete immunization (one-shot dose or second shot of two
