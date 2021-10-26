@@ -32,7 +32,7 @@ function Testing() {
 
 				<div className="location-section">
 					<h3 className="location-heading">Testing Location</h3>
-					<img src={doctor} alt="doctor"/>
+					<img className="doctor-img" src={doctor} alt="doctor"/>
 					<p className="location-sub">
 						Testing is ongoing throughout the semester. Testing will occur every
 						from 8:00AM - 6:00PM. <span>Walk-in only.</span>Please follow the
@@ -84,13 +84,13 @@ function Testing() {
 						the Moderna or Pfizer vaccine was due by{" "}
 						<span>August 30, 2021</span>, for all students, faculty, and staff.
 						If you have not yet submitted proof of your completed vaccination
-						series, please contact <span>health@college.edu</span> or{" "}
-						<span>hr@college.edu</span>
+						series, please contact <span> health@college.edu </span> or{" "}
+						<span> hr@college.edu </span>
 						(faculty and staff) immediately.
 					</p>
 
 					<h3 className="vaccine-doc">Vaccination Document</h3>
-					<img src={couple} alt="college couple"/>
+					<img className="couple" src={couple} alt="college couple"/>
 					<p className="vaccination-info">
 						In order to be considered fully vaccinated, individuals should have
 						obtained complete immunization (one-shot dose or second shot of two
@@ -101,7 +101,7 @@ function Testing() {
 						Portal on or before August 13. Proof includes:
 						<br></br>
 						<br></br>A written certification of vaccination, such as a CDC
-						vacciantion card. Medical documents showing the date and type of
+						vaccination card. Medical documents showing the date and type of
 						vaccine adminstered.
 						<span>
 							Do not include any medical or genetic information with your proof

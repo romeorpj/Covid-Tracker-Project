@@ -51,6 +51,7 @@ a:not([class]) {
 	.testing-header {
 		width: 975px;
 	}
+
 	.test-sub {
 		width: 900px;
 	}
@@ -74,6 +75,7 @@ a:not([class]) {
 		font-weight: 700;
 		background-color: var(--bluebutton);
 		color: var(--white);
+		margin: 70px;
 	}
 }
 
@@ -101,20 +103,21 @@ main {
 	height: 500px;
 	width: 100%;
 	font-family: "Open Sans", sans-serif;
-	font-size: 30px;
+	
 	text-align: center;
 	margin-top: 4rem;
 }
 
 .covid-label {
 	padding: 200px;
+	font-size: 50px;
 }
 
 .testing-requirement {
 	font-family: "Open Sans", sans-serif;
 	font-size: 30px;
 	margin-left: 1rem;
-	margin-top: 0.5rem;
+	margin-top: 2.5rem;
 }
 
 .test-sub {
@@ -165,21 +168,22 @@ span {
 	height: 400px;
 }
 
-.vaccination-header {
-	margin-top: 15rem;
-}
-.vaccination-header {
+.vaccination-section {
 	font-family: "Open Sans", sans-serif;
-	font-size: 30px;
 	text-align: center;
 	background-image: url(images/vaccine-background.png);
 	background-repeat: no-repeat;
 	height: 500px;
 	width: 100%;
+	margin-top: 10rem;
 }
 
 .vaccine-label {
-	padding: 200px;
+	padding: 230px;
+	text-align: center;
+	position: relative;
+	font-size: 50px;
+
 }
 
 .vaccine-sub {
@@ -199,6 +203,7 @@ span {
 
 .buttons {
 	margin-top: -20px;
+	
 }
 
 .clinic {
@@ -207,6 +212,7 @@ span {
 	padding: 15px;
 	margin: 80px;
 	cursor: pointer;
+	font-size: 15px;
 	font-family: "Open sans", sans-serif;
 	font-weight: 700;
 	background-color: var(--bluebutton);
@@ -225,9 +231,9 @@ span {
 	border: none;
 	width: 420px;
 	padding: 15px;
-	margin: 70px;
 	cursor: pointer;
 	font-family: "Open sans", sans-serif;
+	font-size: 15px;
 	font-weight: 700;
 	background-color: var(--greenbutton);
 	color: var(--white);
@@ -283,6 +289,7 @@ span {
 	padding: 15px;
 	margin: 50px;
 	cursor: pointer;
+	font-size: 15px;
 	font-family: "Open sans", sans-serif;
 	font-weight: 700;
 	background-color: var(--bluebutton);
