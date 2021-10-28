@@ -6,9 +6,9 @@
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
-	/*margin: 0;
-	padding: 0;*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 	border: 0;
 }
 
@@ -43,10 +43,6 @@ body,
 	min-height: 100vh;
 }
 
-/* #root {
-	display: flex;
-	flex-direction: column;
-} */
 P,
 li {
 	font-size: 1.6rem;
